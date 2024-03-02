@@ -2,7 +2,7 @@
 
 include 'functions.php';
 
-/* ========== ABSTRAÇÃO (CLASSES) ============*/
+/* ========== ABSTRAÇÃO (CLASSES) =========== */
 
 // ((( ABSTRACT )))
 

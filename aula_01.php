@@ -2,7 +2,7 @@
 
 /* ============= TIPO DE DADOS ============== */
 
-// ((( VÁRIAVEL )))
+// ((( VARIÁVEL )))
 
 /**
  * Esse tipo de dado pode ser redeclarado ou alterado.
@@ -13,7 +13,7 @@ $result = 2;
 
 echo $result;
 
-// ((( VÁRIAVEL DINÂMICA )))
+// ((( VARIÁVEL DINÂMICA )))
 
 /**
  * Esse tipo de dado pode ser declarado com o conteúdo presente dentro de outra variável.
@@ -38,7 +38,7 @@ echo TESTE;
 
 /* ========================================== */
 
-/* ===== PADRÃO DE ESCRITA DE DADOS ===== */
+/* ======= PADRÃO DE ESCRITA DE DADOS ======= */
 
 // ((( VARIÁVEIS )))
 
@@ -68,4 +68,5 @@ $snake_case = 'snake_case';
 const MAIUSCULA = 'MAIUSCULA_MAIUSCULA';
 
 /* ========================================== */
+
 ?>

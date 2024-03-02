@@ -52,4 +52,46 @@ do {
 
 /* ========================================== */
 
+/* ============ CONTINUE E BREAK ============ */
+
+// ((( CONTINUE )))
+
+/**
+ * O continue serve para pular um indice no laço de repetição.
+ * Por exemplo: 
+ * 
+ * Esse algoritimo abaixo vai exibir os numeros de 0 á 9, se o inidice for igual a 6 
+ * ele irá diretamente pular para o proximo indice assim não executando a parte de exibição. 
+ * 
+ * Resultado: 0,1,2,3,4,5,7,8,9
+ */
+
+for ($i=0; $i < 10; $i++) { 
+    if ($i == 6) {
+        continue;
+    }
+    echo $i;
+}
+
+// ((( BREAK )))
+
+/**
+ * O break serve para finalizar/parar a execução de um laço de repetição.  
+ * Por exemplo: 
+ * 
+ * Esse algoritimo abaixo vai exibir os numeros de 0 á 9, se o inidice for igual a 5 
+ * ele irá finalizar o laço de repetição.
+ * 
+ * Resultado: 0,1,2,3,4
+ */
+
+for ($i=0; $i < 10; $i++) { 
+    if ($i == 5) {
+        break;
+    }
+    echo $i;
+}
+
+/* ========================================== */
+
 ?>

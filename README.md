@@ -4,6 +4,11 @@ Esse respositório tem como objetivo conhecer ou esclarecer toda a base sobre a 
 
 __Cada aula apresentará até 2 temas de maneira rápida e intuitiva.__
 
+## Aula 0:
+__Incluindo arquivos__
+
+* Nesta aula é apresentado como incluir arquivos de extensão (código) .php.
+
 ## Aula 1:
 __Variavel e Constante__
 

@@ -7,7 +7,7 @@ include 'variables.php';
 // ((( HERANÇA )))
 
 /**
- * A herança serve como extensor uma classe. Com a herança é possivel acessar 
+ * A herança serve como extensor de uma classe. Com a herança é possivel acessar 
  * atributos e métodos da classe pai através da classe filha.
  */
 
@@ -75,6 +75,36 @@ class Motorcycle extends Vehicle {
 
 $obMotorcycle = new Motorcycle('Kymco cv3',3);
 $result = $obMotorcycle->getMotorcycle();
+
+var_dump($result);
+
+// ((( FINAL )))
+
+/**
+ * Quando uma classe, método ou atributo é difinido com final, não é possivel estende-lo novamente
+ */
+
+// classe neta e ultima permitida ser estendida
+final class MotorcycleHonda extends Motorcycle {
+    private $name;
+
+    public function __construct($name, $numberWheels = 2)
+    {
+        $this->numberOfWheels = $numberWheels;
+        $this->name = $name . 'Honda';
+    }
+
+    public function getMotorcycleHonda()
+    {
+        return [
+            'car_name' => $this->name,
+            'number_of_wheels' => $this->numberOfWheels
+        ];
+    }
+}
+
+$obMotorcycleHonda = new MotorcycleHonda('Tryba k3', 2);
+$result = $obMotorcycleHonda->getMotorcycleHonda();
 
 var_dump($result);
 
