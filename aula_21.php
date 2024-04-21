@@ -61,4 +61,53 @@ var_dump($request->getRequest());
  * Agregação nada mais é do que a junção de muitas classes em apenas uma.
  */
 
+class File 
+{
+    private string $content;
+    private string $autor;
+
+    public function __construct(string $content, string $autor) 
+    {
+        $this->content = $content;
+        $this->autor = $autor;
+    }
+
+    public function getContent(): array
+    {
+        return [
+            'content' => $this->content,
+            'autor'   => $this->autor
+        ];
+    }
+}
+
+class Drawer 
+{
+    private string $section;
+    private array $files;
+
+    public function __construct(string $section) {
+        $this->section = $section;
+    }
+
+    public function setFile(string $content, string $autor): void
+    {
+        $this->files[] = new File($content, $autor);
+    }
+
+    public function getFile(int $position): File
+    {
+        return $this->files[$position];
+    }
+}
+
+$drawer = new Drawer('SECTION C2');
+
+$drawer->setFile('Meu primeiro arquivo desta gaveta', 'Gustavo Sachetto');
+$drawer->setFile('Meu segundo arquivo desta gaveta', 'Gustavo Sachetto');
+
+var_dump($drawer->getFile(1)->getContent());
+
 /* ========================================== */
+
+?>

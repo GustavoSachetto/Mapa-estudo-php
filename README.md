@@ -123,6 +123,30 @@ __Self e Parent (classes)__
 
 ## Aula 18: 
 
-__Atributos e métodos estáticos__
+__Atributos e métodos estáticos (classes)__
 
 * Nesta aula é apresentado os atributos e métodos de maneira estática.
+
+## Aula 19: 
+
+__Interfaces, enums e traits de Classes__
+
+* Nesta aula é apresentado o que são interfaces de uma classe, juntamente de como implementar.
+
+## Aula 20: 
+
+__Construtor e Destrutor (classes)__
+
+* Nesta aula é apresentado o que são os métodos construtores e destrutores de uma classe.
+
+## Aula 21: 
+
+__Relação entre objetos (classes)__
+
+* Nesta aula é apresentado como relacionar objetos através das classes. Será mostrado seguintes modelos de relações: Associação e Agregação.
+
+## Aula 22: 
+
+__Métodos mágicos (classes)__
+
+* Nesta aula é apresentado os principais métodos mágicos além do construct e destruct.

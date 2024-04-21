@@ -72,6 +72,32 @@ class User
     }
 }
 
+// ((( ENUM )))
+
+/**
+ * O enum serve para definir os valores aceitos por uma classe em questão. 
+ * funciona basicamente como um switch case na orientação a objetos
+ */
+
+enum Permission: string
+{
+    case ADULT       = 'Você não é maior de 18 anos';
+    case CUSTOMER    = 'Você não é um cliente recorrente';
+    case TIMEOUT     = 'Você atingiu o tempo limite da página';
+    case LEVEL_ACCESS = 'Você não é um usuário administrador';
+}
+
+class Messenger
+{
+    public static function show(int $codeError, string $message)
+    {
+        echo "[Error] code: $codeError ($message).";
+    }
+}
+
+// Passando por parâmetro a mensagem do enum gerado
+Messenger::show(48, Permission::TIMEOUT->value)
+
 /* ========================================== */
 
 ?>
