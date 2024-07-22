@@ -150,3 +150,11 @@ __Relação entre objetos (classes)__
 __Métodos mágicos (classes)__
 
 * Nesta aula é apresentado os principais métodos mágicos além do construct e destruct.
+
+## Aula 23:
+
+__Filas e Pilhas__
+
+* Nesta aula é apresentado as filas e pilhas no php, como são estruturadas e pra que servem.
+
+Filas e pilhas são estruturas usualmente implementadas através de listas, retringindo a política de manipulação dos elementos da lista.
